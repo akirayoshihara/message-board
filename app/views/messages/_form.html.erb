@@ -12,10 +12,10 @@
     </div>
   <% end %>
 
-  名前:
-  <%= f.text_field :name %>
+  <label for="id">投稿者ID</label><a href="#" style="font-size: 90%"> + 編集</a>
+  <%= f.text_field :name ,class: "form-control", placeholder:"投稿者IDを入力する" %>
 
-  内容:
-  <%= f.text_field :body %>
+  <label for="comment">コメント</label>
+  <%= f.text_field :body ,class: "form-control", rows:"3", placeholder:"コメントを記入する"%>
   <%= f.submit class: "btn btn-sm btn-primary" %>
 <% end %>
