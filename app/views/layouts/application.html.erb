@@ -10,17 +10,13 @@
 <body>
   <nav class="navbar">
   <div class="container">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">Message Board</a>
-    </div>
-  </div>
-  </nav>
-  <div class="container">
+    <% if notice %>
+      <div class="alert alert-info">
+        <%= notice %>
+      </div>
+    <% end %>
+    
     <%= yield %>
   </div>
-  <hr>
-  <footer>
-    <div class="footer" style="text-align:center">CopyRight Reserved @Akira Yoshihara 2016</div>
-  </footer>
 </body>
 </html>
